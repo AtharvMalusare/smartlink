@@ -92,4 +92,18 @@ button:hover { opacity: 0.85; }
 }
 
 nav {
-  backgrou
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+nav a:hover { color: #6366f1; }
+nav .brand { font-weight: 700; color: #6366f1; font-size: 1.1rem; margin-right: auto; }
