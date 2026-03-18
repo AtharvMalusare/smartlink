@@ -1,0 +1,95 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 { font-size: 1.75rem; font-weight: 600; margin-bottom: 0.25rem; }
+h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 1rem; }
+p.subtitle { color: #6b7280; margin-bottom: 1.5rem; }
+
+input, select {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+  outline: none;
+  transition: border 0.2s;
+}
+input:focus, select:focus { border-color: #6366f1; }
+
+button {
+  padding: 0.6rem 1.25rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+button:hover { opacity: 0.85; }
+
+.btn-primary { background: #6366f1; color: white; }
+.btn-danger  { background: #ef4444; color: white; }
+.btn-secondary { background: #f3f4f6; color: #374151; border: 1px solid #d1d5db; }
+
+.token-box {
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  word-break: break-all;
+  font-family: monospace;
+  font-size: 0.85rem;
+}
+
+.warning {
+  background: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  color: #92400e;
+  margin-bottom: 1rem;
+}
+
+.error { color: #ef4444; font-size: 0.85rem; margin-bottom: 0.5rem; }
+.success { color: #10b981; font-size: 0.85rem; margin-bottom: 0.5rem; }
+
+.slug-row { display: flex; gap: 0.5rem; align-items: flex-start; }
+.slug-row input { margin-bottom: 0; }
+
+.rule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.75rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+nav {
+  backgrou
