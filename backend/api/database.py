@@ -10,7 +10,11 @@ DATABASE_URL = os.getenv(
     "postgresql://smartlink:smartlink123@localhost:5433/smartlink"
 )
 
-engine = create_engine(DATABASE_URL)
+connect_args = {}
+if "railway" in DATABASE_URL:
+    connect_args = {"sslmode": "require"}
+
+engine = create_engine(DATABASE_URL, connect_args=connect_args)
 SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
 Base = declarative_base()
 
